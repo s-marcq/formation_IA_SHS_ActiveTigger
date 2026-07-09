@@ -29,11 +29,22 @@ Textes OCR en accès libre sur [Internet Archive](https://archive.org), tous ent
     l'annotation et l'entraînement du classifieur ;
   - `corpus_inference.csv` (250 extraits) — mis de côté pour tester le classifieur
     une fois entraîné, jamais vu pendant l'annotation.
-- `corpus_annotation_pre_annote_200.csv` — les mêmes 750 lignes que
-  `corpus_annotation.csv`, avec une colonne `label` en plus : les 200 premières
+- `corpus_annotation_pre_annote_300.csv` — les mêmes 750 lignes que
+  `corpus_annotation.csv`, avec une colonne `label` en plus : les 300 premières
   lignes sont déjà annotées selon le schéma ci-dessous (pour aller plus vite en
   formation — base indicative, à faire contester/corriger par les participants),
-  les 550 suivantes ont un `label` vide, à annoter en séance.
+  les 450 suivantes ont un `label` vide, à annoter en séance.
+- `GUIDE_ANNOTATION.md` — guide de décision Éditorial/Publicité à donner aux
+  annotateurs (marqueurs, exemples, cas piégeux).
+- `prompt_classification_llm.txt` — prompt prêt à l'emploi pour faire classer les
+  extraits par un LLM (mêmes critères que le guide d'annotation).
+- `comparaison_generatif_bert.ipynb` — notebook qui compare les performances d'un
+  modèle génératif (LLM) et d'un modèle BERT (ActiveTigger) sur le jeu de test,
+  à partir de deux exports déposés dans `results/` (voir ci-dessous).
+- `results/` — dossier attendu par `comparaison_generatif_bert.ipynb` : déposez-y
+  `generations.csv` (export des réponses du LLM) et `predictions_BERT.csv` (export
+  ActiveTigger des prédictions BERT). Le notebook y écrit aussi son tableau
+  d'évaluation final (`comparaison_generatif_bert.csv`).
 - `requirements.txt` — dépendances Python, pour exécuter le notebook sur
   [Binder](https://mybinder.org) sans installation locale.
 
@@ -58,8 +69,8 @@ Ce schéma binaire a été préféré à deux alternatives explorées puis écar
   rare (7 % des extraits sur un échantillon de 200) pour servir de base fiable à un
   exercice d'annotation.
 
-Répartition mesurée sur les 200 premiers extraits : 173 Éditorial (86,5 %) /
-27 Publicité (13,5 %). Le déséquilibre est réel mais nettement moins problématique
+Répartition mesurée sur les 300 premiers extraits : 251 Éditorial (83,7 %) /
+49 Publicité (16,3 %). Le déséquilibre est réel mais nettement moins problématique
 que celui de l'axe « types de femmes », et le critère de décision (marque + prix +
 adresse) est beaucoup plus objectif d'un annotateur à l'autre.
 
