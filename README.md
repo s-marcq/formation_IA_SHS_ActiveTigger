@@ -29,10 +29,11 @@ Textes OCR en accès libre sur [Internet Archive](https://archive.org), tous ent
     l'annotation et l'entraînement du classifieur ;
   - `corpus_inference.csv` (250 extraits) — mis de côté pour tester le classifieur
     une fois entraîné, jamais vu pendant l'annotation.
-- `corpus_annotation_pre_annote_200.csv` — les 200 premiers extraits de
-  `corpus_annotation.csv`, déjà annotés (colonne `label`) selon le schéma
-  ci-dessous, pour aller plus vite en formation (base indicative : à faire
-  contester/corriger par les participants).
+- `corpus_annotation_pre_annote_200.csv` — les mêmes 750 lignes que
+  `corpus_annotation.csv`, avec une colonne `label` en plus : les 200 premières
+  lignes sont déjà annotées selon le schéma ci-dessous (pour aller plus vite en
+  formation — base indicative, à faire contester/corriger par les participants),
+  les 550 suivantes ont un `label` vide, à annoter en séance.
 - `requirements.txt` — dépendances Python, pour exécuter le notebook sur
   [Binder](https://mybinder.org) sans installation locale.
 
