@@ -29,25 +29,38 @@ Textes OCR en accès libre sur [Internet Archive](https://archive.org), tous ent
     l'annotation et l'entraînement du classifieur ;
   - `corpus_inference.csv` (250 extraits) — mis de côté pour tester le classifieur
     une fois entraîné, jamais vu pendant l'annotation.
+- `corpus_annotation_pre_annote_200.csv` — les 200 premiers extraits de
+  `corpus_annotation.csv`, déjà annotés (colonne `label`) selon le schéma
+  ci-dessous, pour aller plus vite en formation (base indicative : à faire
+  contester/corriger par les participants).
 - `requirements.txt` — dépendances Python, pour exécuter le notebook sur
   [Binder](https://mybinder.org) sans installation locale.
 
-Les deux CSV sont déjà fournis dans ce dossier (tirage reproductible, graine 42),
-à partir de 1384 extraits disponibles au total ; relancez simplement le notebook si
-vous voulez d'autres tailles ou une autre valeur de `TAILLE_MAX`.
+Les deux CSV de `decoupage_corpus.ipynb` sont déjà fournis dans ce dossier (tirage
+reproductible, graine 42), à partir de 1384 extraits disponibles au total ; relancez
+simplement le notebook si vous voulez d'autres tailles ou une autre valeur de
+`TAILLE_MAX`.
 
-## Piste d'annotation proposée (3 classes)
+## Piste d'annotation retenue : Éditorial / Publicité
 
-- **Prescriptif / normatif** — le texte prescrit un comportement, une vertu, un rôle
-  attendu de la femme.
-- **Descriptif / factuel** — constat sans injonction (mode décrite sans jugement,
-  recette, actualité, annonce).
-- **Fiction / récit** — contes, nouvelles, poésie.
+- **Éditorial** — contenu produit par la rédaction : mode, chroniques, critiques,
+  fiction, annonces internes au journal (conférences, sommaires, abonnements).
+- **Publicité** — réclame commerciale tierce : marque, prix, adresse, mode d'achat
+  (cosmétiques, corsets, phonographes, remèdes...).
 
-Les 3 catégories ont été vérifiées présentes dans `corpus_annotation.csv` par
-relecture d'un échantillon (ex. conseils de soin de peau pour le prescriptif,
-descriptions de toilettes pour le descriptif, passages narratifs à personnages pour
-la fiction).
+Ce schéma binaire a été préféré à deux alternatives explorées puis écartées :
+- un schéma à 4 classes (Prescriptif/normatif, Descriptif/factuel, Fiction/récit,
+  Chronique/commentaire) — plus riche thématiquement, mais bien plus subjectif à
+  trancher (plusieurs cas limites en pratique) ;
+- un axe « types de femmes » (portraits d'archétypes féminins comme « l'aventurière »
+  ou « la jeune fille américaine ») — historiquement le plus intéressant, mais trop
+  rare (7 % des extraits sur un échantillon de 200) pour servir de base fiable à un
+  exercice d'annotation.
+
+Répartition mesurée sur les 200 premiers extraits : 173 Éditorial (86,5 %) /
+27 Publicité (13,5 %). Le déséquilibre est réel mais nettement moins problématique
+que celui de l'axe « types de femmes », et le critère de décision (marque + prix +
+adresse) est beaucoup plus objectif d'un annotateur à l'autre.
 
 ## Notes
 
