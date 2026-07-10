@@ -67,9 +67,4 @@ CAS PARTICULIERS
 - Extrait trop dégradé par l'OCR pour trancher avec certitude → réponds Éditorial
   (classe majoritaire, coût d'erreur plus faible).
 
-FORMAT DE RÉPONSE
-
-Réponds uniquement par un seul mot, sans ponctuation ni explication : soit
-« Éditorial », soit « Publicité ».
-
 TEXTE À CLASSER :
