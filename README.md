@@ -68,5 +68,3 @@ adresse) est beaucoup plus objectif d'un annotateur à l'autre.
 
 
 [1] Boelaert J., Ollion É., Schultz É. (2026). ActiveTigger (Version 0.9.9) [Computer software]. https://github.com/activetigger/activetigger
-
-URL docs : https://docs.numerique.gouv.fr/docs/43b2b2bb-266b-4f50-8d01-6c39d554e1fa/
