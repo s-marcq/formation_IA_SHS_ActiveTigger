@@ -1,14 +1,15 @@
 # Corpus de presse féminine française (1901–1913)
 
-Corpus pour une démo d'annotation et de classification automatique (ActiveTigger) :
-étude historique de la presse féminine française de la Belle Époque, en français
-courant et lisible (contrairement à la presse du XVIIIe / début XIXe siècle, à
-l'orthographe et au style plus difficiles d'accès).
+Corpus pour une démo d'annotation et de classification automatique avec ActiveTigger [1]
+sur de la presse féminine française de la Belle Époque, en français
+courant.
+
+
 
 ## Sources
 
 Textes OCR en accès libre sur [Internet Archive](https://archive.org), tous entre
-1900 et 1935 :
+1900 et 1913 :
 
 | Journal | Date | Identifiant archive.org |
 |---|---|---|
@@ -60,28 +61,12 @@ simplement le notebook si vous voulez d'autres tailles ou une autre valeur de
 - **Publicité** — réclame commerciale tierce : marque, prix, adresse, mode d'achat
   (cosmétiques, corsets, phonographes, remèdes...).
 
-Ce schéma binaire a été préféré à deux alternatives explorées puis écartées :
-- un schéma à 4 classes (Prescriptif/normatif, Descriptif/factuel, Fiction/récit,
-  Chronique/commentaire) — plus riche thématiquement, mais bien plus subjectif à
-  trancher (plusieurs cas limites en pratique) ;
-- un axe « types de femmes » (portraits d'archétypes féminins comme « l'aventurière »
-  ou « la jeune fille américaine ») — historiquement le plus intéressant, mais trop
-  rare (7 % des extraits sur un échantillon de 200) pour servir de base fiable à un
-  exercice d'annotation.
 
 Répartition mesurée sur les 300 premiers extraits : 251 Éditorial (83,7 %) /
-49 Publicité (16,3 %). Le déséquilibre est réel mais nettement moins problématique
-que celui de l'axe « types de femmes », et le critère de décision (marque + prix +
+49 Publicité (16,3 %). Le déséquilibre est réel mais le critère de décision (marque + prix +
 adresse) est beaucoup plus objectif d'un annotateur à l'autre.
 
-## Notes
 
-- Les textes sont dans le domaine public ; l'OCR provient de scans Google Books ou de
-  bibliothèques partenaires d'Internet Archive et contient donc le bruit habituel de
-  ce type de numérisation ancienne (publicités, mentions légales, artefacts d'OCR).
-- Un item initialement repéré sous le titre « Femina » (1909, identifiant
-  `femina0000unse`) s'est révélé être un texte médical en anglais sans rapport avec
-  le magazine ; il a été écarté du corpus.
-
+[1] Boelaert J., Ollion É., Schultz É. (2026). ActiveTigger (Version 0.9.9) [Computer software]. https://github.com/activetigger/activetigger
 
 URL docs : https://docs.numerique.gouv.fr/docs/43b2b2bb-266b-4f50-8d01-6c39d554e1fa/
