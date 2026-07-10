@@ -82,3 +82,6 @@ adresse) est beaucoup plus objectif d'un annotateur à l'autre.
 - Un item initialement repéré sous le titre « Femina » (1909, identifiant
   `femina0000unse`) s'est révélé être un texte médical en anglais sans rapport avec
   le magazine ; il a été écarté du corpus.
+
+
+URL docs : https://docs.numerique.gouv.fr/docs/43b2b2bb-266b-4f50-8d01-6c39d554e1fa/
